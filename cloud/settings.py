@@ -17,6 +17,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    
+    "upload"
 ]
 
 MIDDLEWARE = [
@@ -87,7 +89,19 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 
-STATIC_URL = "static/"
+STATIC_ROOT = "./staticfiles/"
+
+STATIC_URL = "/static/"
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
+# Media files
+
+MEDIA_ROOT = "./media/"
+
+MEDIA_URL = "/media/"
 
 # Default primary key field type
 
