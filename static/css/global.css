@@ -1,0 +1,33 @@
+body {
+    height: 100vh;
+    font-family: monospace;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #ffffff;
+    border: 2px #aaaaaa solid;
+    border-radius: 7px;
+    padding: 15px;
+}
+
+button {
+    outline: none;
+    border: none;
+    border-radius: 14px;
+    font-family: monospace;
+    padding: 7px 14px 7px 14px;
+    box-shadow: 0px 0px 10px -5px #000000;
+    background-color: #4072ce;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #32589e;
+}
